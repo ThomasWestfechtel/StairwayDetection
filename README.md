@@ -1,15 +1,20 @@
 # StairwayDetection
+
+
+
 Repository for Stairway Detection using PointCloud Data
 
 To install the repository:
 
 Go to main directory
 
+```
 mkdir build
 cd build
 
 cmake ..
 make -j8
+```
 
 2 example situation are given in the repository. To test them use:
 ./stair_det ../examples/13-Depth.pcd ../examples/13-Result.pcd
