@@ -27,7 +27,8 @@ int main (int argc, char *argv[])
 {  
 	if(argc < 3)
 	{
-		std::cout<<"Not enough arguments - State input point cloud and result point cloud file"<<std::endl;
+		std::cerr << "Not enough arguments - " << argv[0] << " <input pcd> <output pcd>" << std::endl;
+		return 1;
 	}
 
 // Loading input point cloud //
