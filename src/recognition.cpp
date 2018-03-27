@@ -28,7 +28,7 @@ recognition::recognition()
 	pdFlag = true;
 	pDistance << 0.18,0.50;
 
-	// true for known floor - false for unknown (floor should be at z = 0.0
+	// true for known floor - false for unknown (floor should be at z = 0.0)
 	floorInformation = false;
 
 
@@ -498,7 +498,7 @@ void recognition::finalize(Stairs& input)
 	if(stairOffset <= 0 || stairOffset + stepAmount[0] -1 > 5)
 		stairOffset=1;
 	if(basePart < 2)
-		if((floorInformation) && not(round(stairPos[2]/distVec[2]) + stepAmount[0] -1 > 5))
+		if(not(floorInformation) && not(round(stairPos[2]/distVec[2]) + stepAmount[0] -1 > 5))
 			stairPos = stairPos - (stairOffset - 1) * distVec;
 		else
 		{
