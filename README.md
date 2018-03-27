@@ -23,6 +23,8 @@ make -j8
 
 Depending on the accuracy of the employed LIDAR some parameters need to be tuned accordingly. Most important are the parameters of the region growing algorithm in src/regiongrowing.h
 
+This is the stand-alone version of the Stairway Detection. A version including a GUI can be found at:
+https://github.com/ThomasWestfechtel/StairwayDetectionGUI
 
 The processing steps of the algorihm are explained in "3D graph based stairway detection and localization for mobile robots" (http://ieeexplore.ieee.org/document/7759096/).
 
