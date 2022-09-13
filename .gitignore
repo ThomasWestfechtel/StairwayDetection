@@ -1,0 +1,15 @@
+*
+!.gitignore
+!*.h
+!*.hpp
+!*.cpp
+!*.png
+!*.pcd
+!CMakeLists.txt
+!README.md
+!build/.keep
+!examples/
+!include/
+!pics/
+!src/
+examples/*Result*.pcd
